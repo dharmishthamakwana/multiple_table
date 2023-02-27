@@ -36,12 +36,15 @@ class _HomescreenState extends State<Homescreen> {
             key: formkey,
             child: Column(
               children: [
-                TextFormField(
-                  keyboardType: TextInputType.number,
-                  controller: txtInput,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(width: 1.5, color: Colors.black),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    keyboardType: TextInputType.number,
+                    controller: txtInput,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(width: 1.5, color: Colors.black),
+                      ),
                     ),
                   ),
                 ),
