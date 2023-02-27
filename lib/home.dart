@@ -39,23 +39,16 @@ class _HomescreenState extends State<Homescreen> {
                 TextFormField(
                   keyboardType: TextInputType.number,
                   controller: txtInput,
-                  validator: (value) {
-                    if (inputNumber < 0 || check == false) {
-                      return "enter valid input !";
-                    } else {
-                      null;
-                    }
-                  },
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                    borderSide: BorderSide(width: 1.5, color: Colors.black),
-                  )),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(width: 1.5, color: Colors.black),
+                    ),
+                  ),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 ElevatedButton(
-
                     onPressed: () {
                       setState(
                         () {
